@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	282deb247874c415d87dc211affa9eb7
 URL:		http://wmpower.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
