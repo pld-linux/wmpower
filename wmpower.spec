@@ -7,7 +7,7 @@ Version:	0.1.2
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://wmpower.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,7 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
