@@ -3,12 +3,13 @@ Summary(pl):	Dokowalny monitor APM/ACPI dla WindowMakera
 Summary(pt_BR):	Aplicativo do dock do WindowMaker para monitorar a carga da bateria
 Summary(es):	Una aplicación para monitorar la batería en el dock del WindowMaker
 Name:		wmpower
-Version:	0.1.3
+Version:	0.3.0
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	f02fda20702262059b6d49dee0d11ebc
+# Source0-md5:	7ba08d0e2cedb38856427db0b4596579
+Source1:	%{name}.desktop
 URL:		http://wmpower.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,20 +37,25 @@ Basado en soporte APM/ACPI del kernel. Es útil en notebooks.
 %setup -q
 
 %build
+%configure
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -pipe -Wall -pedantic"
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+	
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/%{name}
+%{_applnkdir}/DockApplets/*
