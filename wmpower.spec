@@ -35,7 +35,9 @@ Basado en soporte APM/ACPI del kernel. Es útil en notebooks.
 %setup -q
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -pipe -Wall -pedantic"
 
 %install
 rm -rf $RPM_BUILD_ROOT
