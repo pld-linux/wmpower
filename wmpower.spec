@@ -3,12 +3,12 @@ Summary(pl):	Dokowalny monitor APM/ACPI dla WindowMakera
 Summary(pt_BR):	Aplicativo do dock do WindowMaker para monitorar a carga da bateria
 Summary(es):	Una aplicación para monitorar la batería en el dock del WindowMaker
 Name:		wmpower
-Version:	0.1.2
+Version:	0.1.3
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	282deb247874c415d87dc211affa9eb7
+# Source0-md5:	f02fda20702262059b6d49dee0d11ebc
 URL:		http://wmpower.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
