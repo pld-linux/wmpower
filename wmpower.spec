@@ -7,14 +7,13 @@ Version:	0.4.0
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/wmpower/%{name}-%{version}.tar.bz2
 # Source0-md5:	e92d0b777c9363dc738f9adba02bb60f
 Source1:	%{name}.desktop
 URL:		http://wmpower.sourceforge.net/
 BuildRequires:	XFree86-devel
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 wmpower is a WindowMaker dock application allowing the user to graphically
