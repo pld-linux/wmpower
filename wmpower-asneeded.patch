@@ -7,7 +7,7 @@
 -wmpower_LDADD   = dockapp/libdockapp.a power_management/libpower.a
 -wmpower_LDFLAGS = -lpthread -lXpm -lX11 -lXext -L/usr/X11R6/lib
 +wmpower_LDADD   = dockapp/libdockapp.a power_management/libpower.a -lpthread -lXpm -lX11 -lXext
-+wmpower_LDFLAGS = -L/usr/X11R6/lib
++wmpower_LDFLAGS =
  
  EXTRA_DIST = \
  		pixmaps/wmpower_mask.xbm \
