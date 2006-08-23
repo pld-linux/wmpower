@@ -4,14 +4,16 @@ Summary(pl):	Dokowalny monitor APM/ACPI dla WindowMakera
 Summary(pt_BR):	Aplicativo do dock do WindowMaker para monitorar a carga da bateria
 Name:		wmpower
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://dl.sourceforge.net/wmpower/%{name}-%{version}.tar.bz2
 # Source0-md5:	b0dd1629a8d8c913d0da6b5da2ba9581
 Source1:	%{name}.desktop
+Patch0:		%{name}-asneeded.patch
 URL:		http://wmpower.sourceforge.net/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libXpm-devel
+BuildRequires:	xorg-proto-xextproto-devel
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,8 +37,12 @@ Basado en soporte APM/ACPI del kernel. Es útil en notebooks.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make} \
 	CC="%{__cc}" \
