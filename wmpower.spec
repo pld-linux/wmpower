@@ -1,7 +1,7 @@
 Summary:	Dockable APM/ACPI monitor for WindowMaker
-Summary(es):	Una aplicación para monitorar la batería en el dock del WindowMaker
-Summary(pl):	Dokowalny monitor APM/ACPI dla WindowMakera
-Summary(pt_BR):	Aplicativo do dock do WindowMaker para monitorar a carga da bateria
+Summary(es.UTF-8):   Una aplicaciÃ³n para monitorar la baterÃ­a en el dock del WindowMaker
+Summary(pl.UTF-8):   Dokowalny monitor APM/ACPI dla WindowMakera
+Summary(pt_BR.UTF-8):   Aplicativo do dock do WindowMaker para monitorar a carga da bateria
 Name:		wmpower
 Version:	0.4.1
 Release:	2
@@ -21,19 +21,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmpower is a WindowMaker dock application allowing the user to graphically
 see the power management status of his laptop.
 
-%description -l pl
-wmpower jest aplikacj± dokuj±c± dla WindowMakera, pozwalaj±c±
-u¿ytkownikowi zwizualizowaæ ustawienia zarz±dzania energi± swojego
+%description -l pl.UTF-8
+wmpower jest aplikacjÄ… dokujÄ…cÄ… dla WindowMakera, pozwalajÄ…cÄ…
+uÅ¼ytkownikowi zwizualizowaÄ‡ ustawienia zarzÄ…dzania energiÄ… swojego
 laptopa.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Aplicativo do dock do WindowMaker para monitorar a carga da bateria,
-através do suporte APM/ACPI do kernel. Esta informação é útil para
-usuários de laptops.
+atravÃ©s do suporte APM/ACPI do kernel. Esta informaÃ§Ã£o Ã© Ãºtil para
+usuÃ¡rios de laptops.
 
-%description -l es
-Aplicación para monitorar la batería en el dock del WindowMaker.
-Basado en soporte APM/ACPI del kernel. Es útil en notebooks.
+%description -l es.UTF-8
+AplicaciÃ³n para monitorar la baterÃ­a en el dock del WindowMaker.
+Basado en soporte APM/ACPI del kernel. Es Ãºtil en notebooks.
 
 %prep
 %setup -q
