@@ -1,7 +1,7 @@
 Summary:	Dockable APM/ACPI monitor for WindowMaker
-Summary(es.UTF-8):   Una aplicación para monitorar la batería en el dock del WindowMaker
-Summary(pl.UTF-8):   Dokowalny monitor APM/ACPI dla WindowMakera
-Summary(pt_BR.UTF-8):   Aplicativo do dock do WindowMaker para monitorar a carga da bateria
+Summary(es.UTF-8):	Una aplicación para monitorar la batería en el dock del WindowMaker
+Summary(pl.UTF-8):	Dokowalny monitor APM/ACPI dla WindowMakera
+Summary(pt_BR.UTF-8):	Aplicativo do dock do WindowMaker para monitorar a carga da bateria
 Name:		wmpower
 Version:	0.4.1
 Release:	2
