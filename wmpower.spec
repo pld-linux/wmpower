@@ -37,7 +37,7 @@ Basado en soporte APM/ACPI del kernel. Es útil en notebooks.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
